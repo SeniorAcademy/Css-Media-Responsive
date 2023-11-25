@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <title>Document</title>
+    <style>
+        :root {
+            --primary-color: #1560bd;
+            --border-color: #1a1a1a;
+            --white-font: #ffffff;
+            --general-padding: 1.2em;
+            --mb-2: 2em;
+
+            --dark: rgb(33, 33, 33);
+            --yellow: #febe10;
+            --light: #dedede;
+            --shadow: 10px 10px 15px rgba(35, 35, 3, 0.8);
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        main {
+            width: 50%;
+            font-size: 1.2em;
+            line-height: 1.168;
+            position: relative;
+            border: 5px solid var(--border-color);
+            padding: var(--general-padding);
+        }
+
+        main p:first-child {
+            margin-bottom: var(--mb-2);
+            outline: 2px dashed var(--border-color);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <main>
+        <div>
+            <p>We use :root element to style this main tag.</p>
+            <p>This is a dummy text</p>
+        </div>
+    </main>
+</body>
+
+</html>
